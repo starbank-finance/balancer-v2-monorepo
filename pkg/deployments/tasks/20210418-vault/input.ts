@@ -53,4 +53,10 @@ export default {
     pauseWindowDuration: 3 * MONTH,
     bufferPeriodDuration: MONTH,
   },
+  astar: {
+    Authorizer,
+    weth: '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    pauseWindowDuration: 3 * MONTH,
+    bufferPeriodDuration: MONTH,
+  },
 };

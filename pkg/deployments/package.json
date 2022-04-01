@@ -24,6 +24,8 @@
     "lint": "eslint . --ext .ts --ignore-path ../../.eslintignore  --max-warnings 0",
     "prepack": "yarn build",
     "test": "hardhat test ./**/test/*.ts",
+    "deploy": "hardhat deploy",
+    "verify-contract": "hardhat verify-contract",
     "test:deployed": "yarn test --network mainnet",
     "test:fork": "yarn test --fork mainnet --block-number 12800000"
   },

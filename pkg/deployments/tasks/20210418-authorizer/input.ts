@@ -24,4 +24,7 @@ export default {
   arbitrum: {
     admin: '0x6207ed574152496c9B072C24FD87cE9cd9E17320',
   },
+  astar: {
+    admin: '0x753570F88FFa3029cde80cADD4360dff738c23A8',
+  },
 };

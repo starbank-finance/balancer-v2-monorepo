@@ -1,0 +1,25 @@
+{
+  "_mochaExplorer.files": "test/**/*.{j,t}s",
+  "_mochaExplorer.exit": true,
+  "_solidity.enableLocalNodeCompiler": false,
+  "solidity.compileUsingRemoteVersion": "v0.8.10+commit.fc410830",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.packageDefaultDependenciesDirectory": "hardhat/node_modules",
+
+  "solidity.compilerOptimization": 200,
+  "solidity.compileUsingLocalVersion": "",
+  "_solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+
+  "javascript.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
+  "editor.formatOnSave": true,
+  // "solidity.linter": "solhint",
+  "git.ignoreLimitWarning": true,
+
+  "solidity.validationDelay": 1500
+}

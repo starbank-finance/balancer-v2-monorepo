@@ -1,4 +1,3 @@
-
 import dotenv from 'dotenv';
 dotenv.config();
 const { PRIVATE_KEY } = process.env;
@@ -60,6 +59,15 @@ export default {
   defaultNetwork: 'astar',
   networks: {
     astar: {
+      url: 'https://rpc.astar.network:8545',
+      accounts: [`0x${PRIVATE_KEY}`],
+      chainId: 592,
+      gasPrice: 'auto',
+      live: true,
+      gasMultiplier: 2,
+      saveDeployments: true,
+    },
+    astar2: {
       url: 'https://rpc.astar.network:8545',
       accounts: [`0x${PRIVATE_KEY}`],
       chainId: 592,

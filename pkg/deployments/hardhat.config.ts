@@ -1,3 +1,8 @@
+
+import dotenv from 'dotenv';
+dotenv.config();
+const { PRIVATE_KEY } = process.env;
+
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
 import 'hardhat-local-networks-config-plugin';
@@ -51,5 +56,17 @@ task(TASK_TEST)
 export default {
   mocha: {
     timeout: 40000,
+  },
+  defaultNetwork: 'astar',
+  networks: {
+    astar: {
+      url: 'https://rpc.astar.network:8545',
+      accounts: [`0x${PRIVATE_KEY}`],
+      chainId: 592,
+      gasPrice: 'auto',
+      live: true,
+      gasMultiplier: 2,
+      saveDeployments: true,
+    },
   },
 };

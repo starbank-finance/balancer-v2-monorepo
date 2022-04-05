@@ -1,0 +1,40 @@
+{
+  "DUMMY_USDC": {
+    "address": "0xa9c88c700761D69a1c6bfB310429bACbe4ca6Cd7",
+    "id": "0xa9c88c700761d69a1c6bfb310429bacbe4ca6cd7000200000000000000000005",
+    "symbol": "DUMMY_USDC",
+    "blockHash": "0x6a4c7cd4aa1d20cec0b51b908bf2ec724598d65bdc29c916ae118bd84caa29f8",
+    "name": "DUMMY_USDC",
+    "tokens": [
+      "0x6a2d262D56735DbA19Dd70682B39F6bE9a931D98",
+      "0x981FF1EF4A1683Af521243DF5Cf84Be505D8C59a"
+    ],
+    "weights": [
+      {
+        "type": "BigNumber",
+        "hex": "0x02c68af0bb140000"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x0b1a2bc2ec500000"
+      }
+    ],
+    "initialBalances": [
+      {
+        "type": "BigNumber",
+        "hex": "0x030d40"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x0b1a2bc2ec500000"
+      }
+    ],
+    "swapFeePercentage": {
+      "type": "BigNumber",
+      "hex": "0x08e1bc9bf04000"
+    },
+    "oracleEnabled": true,
+    "owner": "0x0000000000000000000000000000000000000000",
+    "initialized": true
+  }
+}

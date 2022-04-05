@@ -1,0 +1,40 @@
+{
+  "DUMMY_ASTR": {
+    "address": "0x545BC6F4F709f8186cf9b9E92FdFA78600732DF9",
+    "id": "0x545bc6f4f709f8186cf9b9e92fdfa78600732df9000200000000000000000003",
+    "symbol": "DUMMY_ASTR",
+    "blockHash": "0x554e5ca0528605bfc7752691faffef474b26e3bbb2d7ff4bf0dcb75ee3494e38",
+    "name": "DUMMY_ASTR",
+    "tokens": [
+      "0x981FF1EF4A1683Af521243DF5Cf84Be505D8C59a",
+      "0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720"
+    ],
+    "weights": [
+      {
+        "type": "BigNumber",
+        "hex": "0x0b1a2bc2ec500000"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x02c68af0bb140000"
+      }
+    ],
+    "initialBalances": [
+      {
+        "type": "BigNumber",
+        "hex": "0x0b1a2bc2ec500000"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x02c68af0bb140000"
+      }
+    ],
+    "swapFeePercentage": {
+      "type": "BigNumber",
+      "hex": "0x08e1bc9bf04000"
+    },
+    "oracleEnabled": true,
+    "owner": "0x0000000000000000000000000000000000000000",
+    "initialized": true
+  }
+}

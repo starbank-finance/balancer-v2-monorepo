@@ -59,4 +59,22 @@ export default {
     pauseWindowDuration: 3 * MONTH,
     bufferPeriodDuration: MONTH,
   },
+  astar2: {
+    Authorizer,
+    weth: '0xEcC867DE9F5090F55908Aaa1352950b9eed390cD',
+    pauseWindowDuration: 3 * MONTH,
+    bufferPeriodDuration: MONTH,
+  },
+  note: {
+    Authorizer,
+    weth: '0xEcC867DE9F5090F55908Aaa1352950b9eed390cD',
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+  opera: {
+    Authorizer,
+    weth: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', // wftm
+    pauseWindowDuration: 0,
+    bufferPeriodDuration: 0,
+  },
 };

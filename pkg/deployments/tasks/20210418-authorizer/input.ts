@@ -27,4 +27,10 @@ export default {
   astar: {
     admin: '0x753570F88FFa3029cde80cADD4360dff738c23A8',
   },
+  astar2: {
+    admin: '0xd8d25f59e467c2c224CdEEd9651d6Aec07A2825d',
+  },
+  opera: {
+    admin: '0x6eA8D23189aE68F1423c6Fc8f93b602B5C0524A7',
+  },
 };

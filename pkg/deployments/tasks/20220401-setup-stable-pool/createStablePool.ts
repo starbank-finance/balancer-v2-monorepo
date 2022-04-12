@@ -66,8 +66,8 @@ export async function createStablePool(params: CreateStablePoolParams): Promise<
   }
 
   const poolData = getDeployedPoolData(symbol);
-  console.log('pool');
-  console.log('poolData=', poolData);
+  // console.log('pool');
+  // console.log('poolData=', poolData);
   // if (poolData && !hasPoolBeenVerified(symbol)) {
   //   await verifyStablePool({
   //     ...params,

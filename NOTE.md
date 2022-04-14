@@ -22,6 +22,11 @@ protocolFeeCollectorAddress=0x36dA73067B12135C3b59B2B1DB828Ee241b7F640
 ✅ Deployed MetaStablePoolFactory at 0xc2cf477be276f8aa2bA1eBfB44df358f57F3767a
 ✅ Deployed NoProtocolFeeLiquidityBootstrappingPoolFactory at 0xDC8b60ea026CC4966C92490358CABb69246ce8F9
 
+
+✅  Deployed InvestmentPoolFactory at 0x5d50Be1673b4559e7521E31f887AB4d1524BDce7
+
+
+
 ✅ Deployed StablePhantomPoolFactory at 0x44041deB970B8f42c77d7A71283d56fdCE6e89e0
 
 ✅ Successfully deployed the StablePool at address 0x76b2250cE870f83240D3e97802C44204d182efB8 with id 0x76b2250ce870f83240d3e97802c44204d182efb8000000000000000000000000

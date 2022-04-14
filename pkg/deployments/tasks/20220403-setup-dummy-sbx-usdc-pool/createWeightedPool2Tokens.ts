@@ -60,9 +60,10 @@ export async function createWeightedPool2Tokens(params: CreateWeightedPool2Token
       );
 
       const { poolAddress, blockHash } = await getPoolAddressAndBlockHashFromTransaction(tx);
+      console.log('poolAddress:', poolAddress);
       const pool = await ethers.getContractAt(WeightedPool2Tokens, poolAddress);
       const poolId = await pool.getPoolId();
-      // console.log('poolId:', poolId);
+      console.log('poolId:', poolId);
       console.log(`Successfully deployed the WeightedPool2Tokens at address ${poolAddress} with id ${poolId}`);
       logger.info(`Pool deployment block hash: ${blockHash}`);
 
@@ -71,7 +72,7 @@ export async function createWeightedPool2Tokens(params: CreateWeightedPool2Token
       console.log(e);
     }
   }
-  // console.log('createWeightedPool2Tokens');
+  console.log('createWeightedPool2Tokens');
 
   const poolData = getDeployedPoolData(symbol);
 
@@ -86,15 +87,18 @@ export async function createWeightedPool2Tokens(params: CreateWeightedPool2Token
   // }
 
   if (poolData && !hasPoolBeenInitialized(symbol)) {
+    console.log('joinPool');
     await joinPool({
       vault,
       poolId: poolData.id,
       tokens,
       initialBalances,
     });
+    console.log('joinPool-ed');
 
     setDeployedPoolAsInitialized(symbol);
   }
+  console.log('ok');
 }
 
 async function verifyWeightedPool2Tokens({

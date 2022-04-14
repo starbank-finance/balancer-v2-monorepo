@@ -41,8 +41,8 @@ export async function createWeightedPool2Tokens(params: CreateWeightedPool2Token
   const { name, symbol, tokens, weights, swapFeePercentage, owner, initialBalances, oracleEnabled } = params;
   const weightedPoolFactoryAddress = getTaskOutputFile('20210418-weighted-pool').WeightedPool2TokensFactory;
   const vaultAddress = await getVaultAddress();
-  console.log('vaultAddress: ', vaultAddress);
-  console.log('weightedPoolFactoryAddress: ', weightedPoolFactoryAddress);
+  // console.log('vaultAddress: ', vaultAddress);
+  // console.log('weightedPoolFactoryAddress: ', weightedPoolFactoryAddress);
   const vault = await ethers.getContractAt(Vault, vaultAddress);
   const factory = await ethers.getContractAt(WeightedPool2TokensFactory, weightedPoolFactoryAddress);
   console.log('createWeightedPool2Tokens: ', symbol);

@@ -25,7 +25,7 @@ export default {
     admin: '0x6207ed574152496c9B072C24FD87cE9cd9E17320',
   },
   astar: {
-    admin: '0x753570F88FFa3029cde80cADD4360dff738c23A8',
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
   },
   astar2: {
     admin: '0xd8d25f59e467c2c224CdEEd9651d6Aec07A2825d',

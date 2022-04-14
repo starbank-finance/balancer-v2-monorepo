@@ -11,8 +11,11 @@ import logger from '@balancer-labs/v2-deployments/src/logger';
 
 // const TASKS_DIRECTORY = path.resolve(__dirname, '../../deployments/tasks');
 const TASKS_DIRECTORY = path.resolve(__dirname, '../../tasks');
-const OUTPUT_DIR_PATH = path.resolve(__dirname, `./addresses/${network.name}/output`);
-const DEPLOYED_POOLS_FILE_PATH = path.resolve(OUTPUT_DIR_PATH, 'DeployedPools.json');
+// const OUTPUT_DIR_PATH = path.resolve(__dirname, `./addresses/${network.name}/output`);
+const OUTPUT_DIR_PATH = path.resolve(__dirname, `./output`);
+// const DEPLOYED_POOLS_FILE_PATH = path.resolve(OUTPUT_DIR_PATH, 'DeployedPools.json');
+const DEPLOYED_POOLS_FILE_PATH = path.resolve(OUTPUT_DIR_PATH, `${network.name}.json`);
+
 const RETRY_COUNT = 15;
 
 export async function joinPool({
@@ -182,7 +185,7 @@ export async function verifyPool({
 }
 
 export function hasPoolBeenDeployed(poolSymbol: string): boolean {
-  console.log('hasPoolBeenDeployed');
+  // console.log('hasPoolBeenDeployed');
   const poolData = getDeployedPoolData(poolSymbol);
 
   if (poolData) {
@@ -205,12 +208,15 @@ export function hasPoolBeenVerified(poolSymbol: string): boolean {
 }
 
 export function hasPoolBeenInitialized(poolSymbol: string): boolean {
+  // console.log('hasPoolBeenInitialized.poolSymbol', poolSymbol);
   const poolData = getDeployedPoolData(poolSymbol);
-
+  console.log('hasPoolBeenInitialized.poolData', poolData);
+  // console.log('hasPoolBeenInitialized.poolData.initialized', poolData.initialized);
   if (poolData && poolData.initialized) {
     logger.info(`The pool with symbol ${poolSymbol} has already been initialized. Skipping initialization...`);
     return true;
   }
+  console.log('hasPoolBeenInitialized: false');
 
   return false;
 }
@@ -218,11 +224,11 @@ export function hasPoolBeenInitialized(poolSymbol: string): boolean {
 export function getDeployedPoolData(
   poolSymbol: string
 ): { address: string; id: string; blockHash: string; verified?: boolean; initialized?: boolean } | null {
-  console.log('getDeployedPoolData');
+  // console.log('getDeployedPoolData');
   const deployedPools = loadDeployedPools();
-  console.log('deployedPools: ', deployedPools);
-  console.log('poolSymbol: ', poolSymbol);
-  console.log('deployedPools[poolSymbol]: ', deployedPools[poolSymbol]);
+  // console.log('deployedPools: ', deployedPools);
+  // console.log('poolSymbol: ', poolSymbol);
+  // console.log('deployedPools[poolSymbol]: ', deployedPools[poolSymbol]);
 
   return deployedPools[poolSymbol] == undefined ? '' : deployedPools[poolSymbol];
 }
@@ -275,6 +281,8 @@ function loadDeployedPools() {
   if (!fs.existsSync(OUTPUT_DIR_PATH)) {
     fs.mkdirSync(OUTPUT_DIR_PATH);
   }
+
+  console.log('loadDeployedPools. DEPLOYED_POOLS_FILE_PATH=', DEPLOYED_POOLS_FILE_PATH);
 
   return fs.existsSync(DEPLOYED_POOLS_FILE_PATH)
     ? JSON.parse(fs.readFileSync(DEPLOYED_POOLS_FILE_PATH).toString())

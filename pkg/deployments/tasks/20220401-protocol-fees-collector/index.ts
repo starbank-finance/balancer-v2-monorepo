@@ -79,7 +79,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
 
   console.log('setFlashLoanFeePercentage');
   // await feesCollector.setFlashLoanFeePercentage('1000000000000000'); // fp(0.001) ?
-  await feesCollector.setFlashLoanFeePercentage(fp(0.1)); // fp(0.001) ?
+  await feesCollector.setFlashLoanFeePercentage(fp(0.001)); // fp(0.001) ?
 
   // await feesCollector.setSwapFeePercentage(fp(0.1));
 };

@@ -16,7 +16,9 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
   // console.log(poolSymbol);
   // console.log(tokens);
   const aParam = 2000;
-  const owner = '0xbef78ca02610f8B4B5E646192e999303d006ED9A'; // Starbank03
+  // const owner = '0xbef78ca02610f8B4B5E646192e999303d006ED9A'; // Starbank03
+  // const owner = '0x1859e0eC5D118B59105486eEDD9580bF1615a358'; // Starbank08
+  const owner = '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e'; // Starbank07
   const swapFeePercentage = BigNumber.from('600000000000000');
 
   const a = await createStablePool({

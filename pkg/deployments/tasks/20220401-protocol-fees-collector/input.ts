@@ -14,8 +14,8 @@ export default {
   astar: {
     Vault,
     Authorizer,
-    admin: '0x753570F88FFa3029cde80cADD4360dff738c23A8',
-    operator: '0x79005701874750055f44d2B532380ba8d3a67288',
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+    operator: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
   },
   astar2: {
     Vault,

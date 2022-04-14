@@ -13,7 +13,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
   ];
   const weights = [BigNumber.from('200000000000000000'), BigNumber.from('800000000000000000')];
   // const weights = [BigNumber.from('800000000000000000'), BigNumber.from('200000000000000000')];
-  const initialBalances = [BigNumber.from('200000'), BigNumber.from('800000000000000000')];
+  const initialBalances = [BigNumber.from('100000'), BigNumber.from('400000000000000000')];
   // const initialBalances = [BigNumber.from('800000000000000000'), BigNumber.from('200000')];
   // const owner = '0xbef78ca02610f8B4B5E646192e999303d006ED9A'; // Starbank03
   const owner = '0x0000000000000000000000000000000000000000';
@@ -32,7 +32,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
     owner: owner,
     etherscanApiKey: '',
   });
-  // console.log(a);
+  console.log(a);
   // const input = task.input() as ProtocolFeesCollector;
   // const args = [input.Vault];
   // await task.deployAndVerify('ProtocolFeesCollector', args, from, force);

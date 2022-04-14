@@ -182,7 +182,7 @@ export async function verifyPool({
 }
 
 export function hasPoolBeenDeployed(poolSymbol: string): boolean {
-  console.log('hasPoolBeenDeployed');
+  // console.log('hasPoolBeenDeployed');
   const poolData = getDeployedPoolData(poolSymbol);
 
   if (poolData) {
@@ -218,11 +218,11 @@ export function hasPoolBeenInitialized(poolSymbol: string): boolean {
 export function getDeployedPoolData(
   poolSymbol: string
 ): { address: string; id: string; blockHash: string; verified?: boolean; initialized?: boolean } | null {
-  console.log('getDeployedPoolData');
+  // console.log('getDeployedPoolData');
   const deployedPools = loadDeployedPools();
-  console.log('deployedPools: ', deployedPools);
-  console.log('poolSymbol: ', poolSymbol);
-  console.log('deployedPools[poolSymbol]: ', deployedPools[poolSymbol]);
+  // console.log('deployedPools: ', deployedPools);
+  // console.log('poolSymbol: ', poolSymbol);
+  // console.log('deployedPools[poolSymbol]: ', deployedPools[poolSymbol]);
 
   return deployedPools[poolSymbol] == undefined ? '' : deployedPools[poolSymbol];
 }
@@ -271,7 +271,7 @@ export function setDeployedPoolAsInitialized(symbol: string): void {
 }
 
 function loadDeployedPools() {
-  console.log('loadDeployedPools. OUTPUT_DIR_PATH=', OUTPUT_DIR_PATH);
+  // console.log('loadDeployedPools. OUTPUT_DIR_PATH=', OUTPUT_DIR_PATH);
   if (!fs.existsSync(OUTPUT_DIR_PATH)) {
     fs.mkdirSync(OUTPUT_DIR_PATH);
   }

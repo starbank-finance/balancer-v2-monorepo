@@ -15,11 +15,13 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
+import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/ISingleRecipientGaugeFactory.sol";
+
 import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/Clones.sol";
 
 import "./PolygonRootGauge.sol";
 
-contract PolygonRootGaugeFactory {
+contract PolygonRootGaugeFactory is ISingleRecipientGaugeFactory {
     ISingleRecipientGauge private _gaugeImplementation;
 
     mapping(address => bool) private _isGaugeFromFactory;
@@ -45,21 +47,21 @@ contract PolygonRootGaugeFactory {
     /**
      * @notice Returns true if `gauge` was created by this factory.
      */
-    function isGaugeFromFactory(address gauge) external view returns (bool) {
+    function isGaugeFromFactory(address gauge) external view override returns (bool) {
         return _isGaugeFromFactory[gauge];
     }
 
     /**
      * @notice Returns the gauge which sends funds to `recipient`.
      */
-    function getRecipientGauge(address recipient) external view returns (ILiquidityGauge) {
+    function getRecipientGauge(address recipient) external view override returns (ILiquidityGauge) {
         return ILiquidityGauge(_recipientGauge[recipient]);
     }
 
     /**
      * @notice Returns the recipient of `gauge`.
      */
-    function getGaugeRecipient(address gauge) external view returns (address) {
+    function getGaugeRecipient(address gauge) external view override returns (address) {
         return ISingleRecipientGauge(gauge).getRecipient();
     }
 
@@ -70,7 +72,7 @@ contract PolygonRootGaugeFactory {
      * @param recipient The address to receive BAL minted from the gauge
      * @return The address of the deployed gauge
      */
-    function create(address recipient) external returns (address) {
+    function create(address recipient) external override returns (address) {
         require(_recipientGauge[recipient] == address(0), "Gauge already exists");
 
         address gauge = Clones.clone(address(_gaugeImplementation));

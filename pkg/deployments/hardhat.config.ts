@@ -77,6 +77,15 @@ export default {
       gasMultiplier: 2,
       saveDeployments: true,
     },
+    polygon: {
+      url: 'https://polygon-rpc.com/',
+      accounts: [`0x${PRIVATE_KEY}`],
+      chainId: 137,
+      gasPrice: 'auto',
+      live: true,
+      gasMultiplier: 2,
+      saveDeployments: true,
+    },
     astar2: {
       url: 'https://rpc.astar.network:8545',
       accounts: [`0x${PRIVATE_KEY}`],

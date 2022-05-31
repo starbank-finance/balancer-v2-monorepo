@@ -1,0 +1,40 @@
+{
+  "A-STAR": {
+    "address": "0x2918C2f103968fbf304748E803fb6B6eA661Ca5e",
+    "id": "0x2918c2f103968fbf304748e803fb6b6ea661ca5e000200000000000000000007",
+    "symbol": "A-STAR",
+    "blockHash": "0x377fc560ab03542ff4f9c8ed58428c00342beef933474eccb81b0708b9080e7f",
+    "name": "Astar on Polkadot",
+    "tokens": [
+      "0x6a2d262D56735DbA19Dd70682B39F6bE9a931D98",
+      "0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720"
+    ],
+    "weights": [
+      {
+        "type": "BigNumber",
+        "hex": "0x0429d069189e0000"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x09b6e64a8ec60000"
+      }
+    ],
+    "initialBalances": [
+      {
+        "type": "BigNumber",
+        "hex": "0x0f4240"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0xd02ab486cedc0000"
+      }
+    ],
+    "swapFeePercentage": {
+      "type": "BigNumber",
+      "hex": "0x08e1bc9bf04000"
+    },
+    "oracleEnabled": true,
+    "owner": "0x0000000000000000000000000000000000000000",
+    "initialized": true
+  }
+}

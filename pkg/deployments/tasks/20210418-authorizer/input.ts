@@ -33,4 +33,13 @@ export default {
   opera: {
     admin: '0x6eA8D23189aE68F1423c6Fc8f93b602B5C0524A7',
   },
+  bsc: {
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+  },
+  harmony: {
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+  },
+  fantomtest: {
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+  },
 };

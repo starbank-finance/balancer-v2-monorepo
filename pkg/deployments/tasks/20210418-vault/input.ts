@@ -77,4 +77,25 @@ export default {
     pauseWindowDuration: 0,
     bufferPeriodDuration: 0,
   },
+
+  fantomtest: {
+    Authorizer,
+    weth: '0x2A9bC7944cb49F446bA8E679eeF4Ecf137A1568f', // WFTM
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+
+  harmony: {
+    Authorizer,
+    weth: '0xcf664087a5bb0237a0bad6742852ec6c8d69a27a', // WONE
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+
+  bsc: {
+    Authorizer,
+    weth: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', // wbnb
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
 };

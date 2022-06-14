@@ -146,7 +146,12 @@ abstract contract AssetTransfersHandler is AssetHelpers {
      * prevent user error.
      */
     receive() external payable {
-        _require(msg.sender == address(_WETH()), Errors.ETH_TRANSFER);
+        // To avoid a weird error on Astar/Shiden, Starbank commented below out.
+        // The behaviour is that there are different amounts between msg.value and actual received amount when the contract received ETH(ASTR) only first time.
+        // We've confirmed the weird amounts on Astar and Shiden, not on other chains including Moonbeam.
+        // Instead of the comment out, we accept ASTR to be forever locked inside the vault if users sent ETH(ASTR) to this contract directly.
+        // We are going to ask audit about the point, but we believe it's not big security concern.
+        // _require(msg.sender == address(_WETH()), Errors.ETH_TRANSFER);
     }
 
     // This contract uses virtual internal functions instead of inheriting from the modules that implement them (in

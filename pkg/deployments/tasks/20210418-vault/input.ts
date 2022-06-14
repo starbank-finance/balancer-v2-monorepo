@@ -35,10 +35,56 @@ export default {
     pauseWindowDuration: 3 * MONTH,
     bufferPeriodDuration: MONTH,
   },
+
   optimism: {
     Authorizer,
     weth: '0x4200000000000000000000000000000000000006',
     pauseWindowDuration: 3 * MONTH,
     bufferPeriodDuration: MONTH,
+  },
+  astar: {
+    Authorizer,
+    weth: '0xAeaaf0e2c81Af264101B9129C00F4440cCF0F720',
+    pauseWindowDuration: 3 * MONTH,
+    bufferPeriodDuration: MONTH,
+  },
+  astar2: {
+    Authorizer,
+    weth: '0xEcC867DE9F5090F55908Aaa1352950b9eed390cD',
+    pauseWindowDuration: 3 * MONTH,
+    bufferPeriodDuration: MONTH,
+  },
+  note: {
+    Authorizer,
+    weth: '0xEcC867DE9F5090F55908Aaa1352950b9eed390cD',
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+  opera: {
+    Authorizer,
+    weth: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', // wftm
+    pauseWindowDuration: 0,
+    bufferPeriodDuration: 0,
+  },
+
+  fantomtest: {
+    Authorizer,
+    weth: '0x2A9bC7944cb49F446bA8E679eeF4Ecf137A1568f', // WFTM
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+
+  harmony: {
+    Authorizer,
+    weth: '0xcf664087a5bb0237a0bad6742852ec6c8d69a27a', // WONE
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+
+  bsc: {
+    Authorizer,
+    weth: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', // wbnb
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
   },
 };

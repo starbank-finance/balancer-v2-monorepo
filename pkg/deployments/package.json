@@ -29,6 +29,11 @@
     "prepack": "yarn build",
     "test": "hardhat test ./**/test/*.ts --fork mainnet --block-number 14850000",
     "ci:prepare-config": "ts-node ci/prepare-config.ts"
+    "deploy": "hardhat deploy",
+    "verify-contract": "hardhat verify-contract",
+    "test:deployed": "yarn test --network mainnet",
+    "test:fork": "yarn test --fork mainnet --block-number 14457800"
+
   },
   "devDependencies": {
     "@balancer-labs/balancer-js": "workspace:*",
@@ -56,5 +61,8 @@
   "peerDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "hardhat": "^2.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }

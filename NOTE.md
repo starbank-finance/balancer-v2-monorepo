@@ -1,0 +1,36 @@
+deployer=0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e
+protocolFeeCollectorAddress=0x36dA73067B12135C3b59B2B1DB828Ee241b7F640
+
+✅ Deployed Authorizer at 0x2A9bC7944cb49F446bA8E679eeF4Ecf137A1568f
+
+✅ Deployed Vault at 0x18df7884DEa0B24334800C8b05763112Eb592ce0
+⚠️ Skipping contract verification, no verifier defined
+✅ Deployed BalancerHelpers at 0x1067A8cEb0bdd5E2A9bEAF627f74dA35011D3c79
+
+✅ Deployed WeightedPoolFactory at 0xeD33ECF106CEfD87faa2d01a512C5387c41D784e
+⚠️ Skipping contract verification, no verifier defined
+✅ Deployed WeightedPool2TokensFactory at 0x978ebDC12847093D774186bdDc91d2785800326e
+
+✅ Deployed StablePoolFactory at 0x7c8DB286140c5febFA5e81f38EcA1afFbE0c4A22
+
+✅ Deployed LiquidityBootstrappingPoolFactory at 0xE41832b564f6867fB5795654d72450a28aeb2339
+
+✅ Deployed QueryProcessor at 0x7dC8E991570676a0ace5A8f5438DCE0E139b4a7E
+
+✅ Deployed QueryProcessor at 0x7dC8E991570676a0ace5A8f5438DCE0E139b4a7E
+
+✅ Deployed MetaStablePoolFactory at 0xc2cf477be276f8aa2bA1eBfB44df358f57F3767a
+✅ Deployed NoProtocolFeeLiquidityBootstrappingPoolFactory at 0xDC8b60ea026CC4966C92490358CABb69246ce8F9
+
+
+✅  Deployed InvestmentPoolFactory at 0x5d50Be1673b4559e7521E31f887AB4d1524BDce7
+
+
+
+✅ Deployed StablePhantomPoolFactory at 0x44041deB970B8f42c77d7A71283d56fdCE6e89e0
+
+✅ Successfully deployed the StablePool at address 0x76b2250cE870f83240D3e97802C44204d182efB8 with id 0x76b2250ce870f83240d3e97802c44204d182efb8000000000000000000000000
+
+DUMMY_USDC
+0xD775e420BCf67C1028cC6376358033950C1B9B27
+0xd775e420bcf67c1028cc6376358033950c1b9b27000200000000000000000001

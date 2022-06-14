@@ -1,0 +1,35 @@
+{
+  "StarbankLP_USDC_DAI_USDT": {
+    "address": "0x76b2250cE870f83240D3e97802C44204d182efB8",
+    "id": "0x76b2250ce870f83240d3e97802c44204d182efb8000000000000000000000000",
+    "symbol": "StarbankLP_USDC_DAI_USDT",
+    "blockHash": "0x401fdd5f4ef905be77a9c17117753dd8b6333f2ad7b48e998e0790c458b4c091",
+    "name": "USDC-DAI-USDT Stable Pool",
+    "tokens": [
+      "0x3795C36e7D12A8c252A20C5a7B455f7c57b60283",
+      "0x6a2d262D56735DbA19Dd70682B39F6bE9a931D98",
+      "0x6De33698e9e9b787e09d3Bd7771ef63557E148bb"
+    ],
+    "amplificationParameter": 2000,
+    "initialBalances": [
+      {
+        "type": "BigNumber",
+        "hex": "0x0186a0"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x0186a0"
+      },
+      {
+        "type": "BigNumber",
+        "hex": "0x016345785d8a0000"
+      }
+    ],
+    "swapFeePercentage": {
+      "type": "BigNumber",
+      "hex": "0x0221b262dd8000"
+    },
+    "owner": "0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e",
+    "initialized": true
+  }
+}

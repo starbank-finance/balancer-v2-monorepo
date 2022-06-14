@@ -4,36 +4,47 @@ yarn deploy --id 20210418-authorizer --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28
 
 Authorizer at 0x2A9bC7944cb49F446bA8E679eeF4Ecf137A1568f
 
+====
 yarn deploy --id 20210418-vault --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-Vault at 0x18df7884DEa0B24334800C8b05763112Eb592ce0
+Vault at 0x70c31b195927ab1B8DeeD3A7C5B1A938C9b74264
+https://bscscan.com/address/0x70c31b195927ab1B8DeeD3A7C5B1A938C9b74264
 
-BalancerHelpers at 0x1067A8cEb0bdd5E2A9bEAF627f74dA35011D3c79
+BalancerHelpers at 0xBe822BbC1Ce013c92D13f4Ae423b3D67e59C7F97
+
+====
 
 yarn deploy --id 20210418-weighted-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-WeightedPoolFactory at 0xeD33ECF106CEfD87faa2d01a512C5387c41D784e
-WeightedPool2TokensFactory at 0x978ebDC12847093D774186bdDc91d2785800326e
+WeightedPoolFactory at 0xBc3a0d94a2419f95b57EE1d212B3B07f4A83D2Ed
+WeightedPool2TokensFactory at 0xf209882d76209858E56ab989ad747237f72621A4
 
+=====
 yarn deploy --id 20210624-stable-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-StablePoolFactory at 0x7dC8E991570676a0ace5A8f5438DCE0E139b4a7E
+StablePoolFactory at 0xc1bDE659aF4Df53f4E708003A4B04D1c541a622A
 
+=====
 yarn deploy --id 20210721-liquidity-bootstrapping-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-LiquidityBootstrappingPoolFactory at 0xc2cf477be276f8aa2bA1eBfB44df358f57F3767a
+LiquidityBootstrappingPoolFactory at 0x348b39B183Ff6c67C13dA5c96F38407bEBBbcd08
+
+===
 
 yarn deploy --id 20210727-meta-stable-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-QueryProcessor at 0xDC8b60ea026CC4966C92490358CABb69246ce8F9
-MetaStablePoolFactory at 0x44041deB970B8f42c77d7A71283d56fdCE6e89e0
+MetaStablePoolFactory at 0x493af52DA53905662cD80d60b3Ebce3494B3A440
+
+====
 
 yarn deploy --id 20211202-no-protocol-fee-lbp --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-NoProtocolFeeLiquidityBootstrappingPoolFactory at 0xd5883178087e8e1Cd162428fa7eE4d374B74fA74
+NoProtocolFeeLiquidityBootstrappingPoolFactory at 0xbcdAbbba197F570f84e20169E61D905FB22B6E26
 
-NoProtocolFeeLiquidityBootstrappingPoolFactory at 0xCBeAe94e2cD3cf0618Bc7d500396bA773FB9d4E5
+====
 
 yarn deploy --id 20211208-stable-phantom-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-StablePhantomPoolFactory at 0x000bfeBa5b5FAB7d3b642202BEC1311D86955C3e
+StablePhantomPoolFactory at 0x4B21ef3EE408d0108122C02F5924daA1D7cD7aD1
+
+====

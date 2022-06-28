@@ -87,4 +87,16 @@ export default {
     pauseWindowDuration: 7776000,
     bufferPeriodDuration: 2592000,
   },
+  avalanche: {
+    Authorizer,
+    weth: '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7', // wavax
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
+  fuji: {
+    Authorizer,
+    weth: '0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3', // wavax; maybe; someone deployed.
+    pauseWindowDuration: 7776000,
+    bufferPeriodDuration: 2592000,
+  },
 };

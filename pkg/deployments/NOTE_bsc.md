@@ -7,12 +7,9 @@ Authorizer at 0x2A9bC7944cb49F446bA8E679eeF4Ecf137A1568f
 ====
 yarn deploy --id 20210418-vault --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
-Vault at 0x70c31b195927ab1B8DeeD3A7C5B1A938C9b74264
-https://bscscan.com/address/0x70c31b195927ab1B8DeeD3A7C5B1A938C9b74264
+Vault at 0xFE35D6a1eBb4a176b0FcA8792621d8deF98c89ba
 
-BalancerHelpers at 0xBe822BbC1Ce013c92D13f4Ae423b3D67e59C7F97
-
-====
+# BalancerHelpers at 0x28bD5c5D9105c933fF65B4A145335fA5de39A76D
 
 yarn deploy --id 20210418-weighted-pool --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
 
@@ -48,3 +45,11 @@ yarn deploy --id 20211208-stable-phantom-pool --network bsc --key 6JCD1H4Y9TMW6H
 StablePhantomPoolFactory at 0x4B21ef3EE408d0108122C02F5924daA1D7cD7aD1
 
 ====
+
+=====
+
+yarn deploy --id 20211203-batch-relayer --network bsc --key 6JCD1H4Y9TMW6HX66DV6A28RZPFRY2R3WN
+
+BatchRelayerLibrary at 0x01A1124Cff7A41c2a7207936D9919Df14e03c5bf
+
+BalancerRelayer at 0x8432ddE7737A097C4Acc5EFa0014C291Ac30Af33

@@ -319,6 +319,14 @@ export default {
       allowUnlimitedContractSize: true,
       blockGasLimit: 0x1fffffffffffff,
     },
+    fuji: {
+      chainId: 43113,
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
+      accounts: [`0x${PRIVATE_KEY}`],
+      live: true,
+      saveDeployments: true,
+      // https://testnet.snowtrace.io/
+    },
     avalanche: {
       chainId: 43114,
       url: 'https://api.avax.network/ext/bc/C/rpc',

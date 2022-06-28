@@ -37,4 +37,10 @@ export default {
   fantomtest: {
     admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
   },
+  avalanche: {
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+  },
+  fuji: {
+    admin: '0x97f26B0E2d132FA61feF9Ba7A7c6DE456c2df35e',
+  },
 };

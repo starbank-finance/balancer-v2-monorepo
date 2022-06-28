@@ -45,5 +45,10 @@ MetaStablePoolFactory at 0xE97602700736f4E5C40534e2319a68AE4E78bDB0
 ====
 
 yarn deploy --id 20211208-stable-phantom-pool --network harmony --key DERPVHFYTQ172GWWMWQDMMKSYHNJHPCGWM
-
+StablePhantomPoolFactory at 0x3C580Aa64817E0dEBce5EA97963bA90AeD4daE09
 ====
+yarn deploy --id 20211203-batch-relayer --network harmony --key DERPVHFYTQ172GWWMWQDMMKSYHNJHPCGWM
+
+BatchRelayerLibrary at 0xe2BF86bDC860343da388160D303f5654951339eB
+
+BalancerRelayer at 0xDEbB4959322527BA41BB86c3691F2f910Dd47320
